@@ -3,7 +3,8 @@ import gsap from "gsap";
 
 import TitleHeader from "../components/TitleHeader";
 import TechIconCardExperience from "../components/models/tech_logos/TechIconCardExperience";
-import { techStackIcons } from "../constants";
+
+import { techSkills } from "../constants";
 // import { techStackImgs } from "../constants";
 
 const TechStack = () => {
@@ -36,61 +37,39 @@ const TechStack = () => {
   });
 
   return (
-    <div id="skills" className="flex-center section-padding">
+    <section
+      id="skills"
+      className="flex-center section-padding bg-black min-h-screen"
+    >
       <div className="w-full h-full md:px-10 px-5">
         <TitleHeader
           title="How I Can Contribute & My Key Skills"
           sub="🤝 What I Bring to the Table"
         />
-        <div className="tech-grid">
-          {/* Loop through the techStackIcons array and create a component for each item. 
-              The key is set to the name of the tech stack icon, and the classnames are set to 
-              card-border, tech-card, overflow-hidden, and group. The xl:rounded-full and rounded-lg 
-              classes are only applied on larger screens. */}
-          {techStackIcons.map((techStackIcon) => (
-            <div
-              key={techStackIcon.name}
-              className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg"
-            >
-              {/* The tech-card-animated-bg div is used to create a background animation when the 
-                  component is hovered. */}
-              <div className="tech-card-animated-bg" />
-              <div className="tech-card-content">
-                {/* The tech-icon-wrapper div contains the TechIconCardExperience component, 
-                    which renders the 3D model of the tech stack icon. */}
-                <div className="tech-icon-wrapper">
-                  <TechIconCardExperience model={techStackIcon} />
+        <div>
+          <ul className="mt-14 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 items-center gap-y-8 gap-x-4 sm:gap-y-16 sm:gap-x-12">
+            {techSkills.map((skill, index) => (
+              <li
+                key={skill.label}
+                className="skill-item flex flex-col px-2 sm:px-6 lg:px-12 items-center gap-2 sm:gap-4 group"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="skill-icon-wrapper">
+                  <img
+                    src={skill.image}
+                    alt={skill.label}
+                    className="skill-icon w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20"
+                  />
                 </div>
-                {/* The padding-x and w-full classes are used to add horizontal padding to the 
-                    text and make it take up the full width of the component. */}
-                <div className="padding-x w-full">
-                  {/* The p tag contains the name of the tech stack icon. */}
-                  <p>{techStackIcon.name}</p>
-                </div>
-              </div>
-            </div>
-          ))}
-
-          {/* This is for the img part */}
-          {/* {techStackImgs.map((techStackIcon, index) => (
-            <div
-              key={index}
-              className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg"
-            >
-              <div className="tech-card-animated-bg" />
-              <div className="tech-card-content">
-                <div className="tech-icon-wrapper">
-                  <img src={techStackIcon.imgPath} alt="" />
-                </div>
-                <div className="padding-x w-full">
-                  <p>{techStackIcon.name}</p>
-                </div>
-              </div>
-            </div>
-          ))} */}
+                <p className="skill-label text-white text-xs sm:text-sm lg:text-base font-medium text-center">
+                  {skill.label}
+                </p>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
