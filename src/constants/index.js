@@ -11,6 +11,10 @@ const navLinks = [
     name: "Skills",
     link: "#skills",
   },
+  {
+    name: "Testimonials",
+    link: "#testimonials",
+  },
 ];
 
 const words = [
@@ -143,42 +147,44 @@ const techStackIcons = [
 
 const expCards = [
   {
+    company: "Scaleup Consulting",
     review:
-      "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
+      "Ishan is professional, skilled, and detail-oriented. He exceeded expectations and delivered creative, reliable work. I’d gladly collaborate with him again.",
+    imgPath: "/images/scaleupconsulting-logo.webp",
     logoPath: "/images/logo1.png",
     title: "Frontend Developer",
-    date: "January 2023 - Present",
+    date: "Mar 2023 - Oct 2024",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
+      "Engineered a real-time sports betting application, leveraging Next.js and Material UI for the front-end and Firebase for backend operations.",
+      "Developed a cross-platform web application using Next.js and Capacitor, seamlessly integrating web and native functionalities.",
       "Optimized web applications for maximum speed and scalability.",
     ],
   },
   {
+    company: "Savvy ESC",
     review:
-      "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+      "Ishan is a highly skilled front-end developer with expertise in React, CSS, and JavaScript. He exceeded expectations with attention to detail and a strong focus on user experience.",
     imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+    title: "Freelance Frontend Developer",
+    date: "Feb 2024 - Apr 2024",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Developed a web application for creating Erosion and Sediment Control (ESC) plansbased on land contours.",
+      "Integrated Google Maps API with drawing tools for site mapping and boundary creation.",
     ],
   },
   {
+    company: "Meiyo",
     review:
-      "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+      "Ishan was very attentive and was able to comprehend our very specific domain requirements.",
     imgPath: "/images/exp3.png",
     logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
+    title: "Freelance Frontend Developer",
+    date: "June 2023 - August 2023",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Contributed to the development of a gaming metaverse and ecosystem platform.",
+      "Created a feature for exclusive listings, which have a lower commission (5% instead of 10%).",
+      "These listings need approval before they can be posted.",
     ],
   },
 ];
