@@ -13,6 +13,7 @@ body {
   color: white;
   scroll-behavior: smooth;
   font-family: "Mona Sans", sans-serif;
+  scroll-padding-top: 100px;
 }
 
 section {
