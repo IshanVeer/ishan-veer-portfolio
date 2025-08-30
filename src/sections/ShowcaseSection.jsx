@@ -47,38 +47,56 @@ const AppShowcase = () => {
     <div id="work" ref={sectionRef} className="app-showcase">
       <div className="w-full">
         <div className="showcaselayout">
-          <a href="/" ref={rydeRef} className="first-project-wrapper">
+          <a
+            href="https://task-management-app-kohl-xi.vercel.app/"
+            ref={rydeRef}
+            className="first-project-wrapper"
+          >
             <div className="image-wrapper">
-              <img src="/images/project1.png" alt="Ryde App Interface" />
+              <img
+                src="/images/project1.png"
+                alt="task-management-app interface"
+              />
             </div>
             <div className="text-content">
               <h2>
-                On-Demand Rides Made Simple with a Powerful, User-Friendly App
-                called Ryde
+                Kanban task management for planning, organising, ideating your
+                tasks effectively
               </h2>
               <p className="text-white-50 md:text-xl">
-                An app built with React Native, Expo, & TailwindCSS for a fast,
+                An app built with React, TailwindCSS, Shadcn for a fast,
                 user-friendly experience.
               </p>
             </div>
           </a>
 
           <div className="project-list-wrapper overflow-hidden">
-            <a href="/" className="project" ref={libraryRef}>
+            <a
+              href="https://audiophile-ecommerce-app-ten.vercel.app/"
+              className="project"
+              ref={libraryRef}
+            >
               <div className="image-wrapper bg-[#FFEFDB]">
-                <img
-                  src="/images/project2.png"
-                  alt="Library Management Platform"
-                />
+                <img src="/images/project2.png" alt="E-commerce platform" />
               </div>
-              <h2>The Library Management Platform</h2>
+              <h2>Audiophile E-Commerce App</h2>
+              <p className="text-white-50 md:text-l">
+                Built with Next.js, TailwindCSS & Shadcn
+              </p>
             </a>
 
-            <a href="/" className="project" ref={ycDirectoryRef}>
+            <a
+              href="https://invoice-app-liard-three.vercel.app/"
+              className="project"
+              ref={ycDirectoryRef}
+            >
               <div className="image-wrapper bg-[#FFE7EB]">
-                <img src="/images/project3.png" alt="YC Directory App" />
+                <img src="/images/project3.png" alt="invoice app" />
               </div>
-              <h2>YC Directory - A Startup Showcase App</h2>
+              <h2>Invoice App</h2>
+              <p className="text-white-50 md:text-l">
+                Built with Next.js, TailwindCSS, Shadcn, clerk auth & mongoDB
+              </p>
             </a>
           </div>
         </div>
